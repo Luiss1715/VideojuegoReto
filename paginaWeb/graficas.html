@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard de Clientes por Región</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="graficas.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Título del gráfico -->
+    
+
+    <!-- Contenedor del gráfico de barras -->
+    <h2>Conteo de Financiamientos seleccionados por usuarios</h2>
+    <div style="width: 60%; margin: auto;">
+      <canvas id="barChart"></canvas>
+    </div>
+
+    <!-- Contenedor del gráfico de dona -->
+    <h2>Clientes por Región</h2>
+    <div style="width: 60%; margin: auto;">
+      <canvas id="donutChart"></canvas>
+    </div>
+
+
+    <!-- Elemento para mostrar la edad promedio -->
+    <p id="edadPromedio"></p>
+
+    <!-- Contenedor del gráfico de gauge -->
+    <h2>Porcentaje de preguntas correctas en usuarios activos</h2>
+    <div style="width: 60%; margin: auto;">
+      <canvas id="gaugeChart"></canvas>
+    </div>
+    
+
+    <h2>Tipos de cultivos seleccionados</h2>
+    <div style="width: 60%; margin: auto;">
+      <canvas id="barChartCultivos"></canvas>
+    </div>
+   
+     <!-- Contenedor del gráfico de wins -->
+     <h2>Porcentaje de victorias en usuarios activos</h2>
+     <div style="width: 60%; margin: auto;">
+       <canvas id="WinsChart"></canvas>
+     </div>
+  
+     
+  
+  </div>
+  <script src="graficas.js"></script>
+</body>
+</html>
+

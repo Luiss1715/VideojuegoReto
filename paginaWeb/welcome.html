@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="welcomeStyle.css">
+  <title>Interactive Drawing</title>
+</head>
+
+<body onload="mostrarUserId()"> 
+
+  <div class="header" id="userName">Bienvenido</div>
+
+  <div class="button-container">
+    <div class="button" id ="jugar" onclick="jugar()">Jugar</div>
+    <div class="button" id = "actualizarDatos" onclick="actualizarDatos()">Actualizar Datos</div>
+    <div class="button hidden" id = "mostrarGrafica" onclick="mostrarEstadisticas()">Mostrar estadísticas</div>
+    <!--<span id="userName" style="color: green; display: none;"></span>  Elemento para mostrar mensaje-->
+  </div>
+  <script src="welcome.js"></script>
+</body>
+
+</html>

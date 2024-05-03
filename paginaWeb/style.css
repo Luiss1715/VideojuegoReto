@@ -1,0 +1,223 @@
+/* CSS Styles */
+
+@import url('https://fonts.googleapis.com/css2?family=Workbench&display=swap');
+
+/* General styles */
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+}
+/* Reset  divisiones*/
+body, div, form {
+    margin: 0;
+    padding: 0;
+}
+/*login*/
+form {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #333;
+    font-size: 1rem;
+}
+
+input[type="email"], input[type="password"] {
+    width: 100%;
+    margin-top: 5px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+
+button {
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: #007bff;
+    padding: 10px 20px;
+    color: white;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+.navbar-nav {
+    display: flex;
+}
+
+.nav-item {
+    padding: 5px 15px;
+    margin-left: 20px;
+    text-decoration: none;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+.nav-item:hover {
+    background-color: rgba(255,255,255,0.2);
+}
+
+/* titulo */
+#titulo {
+    font-family: 'Workbench', sans-serif;
+    text-align: right;
+    margin-right: 1vw;
+}
+
+/* texto */
+body {
+    text-align: left;
+    font-family: 'Workbench', sans-serif;
+    background-color: #000000;
+    color: #cf996d;
+}
+
+header {
+    background-color: #fd8a32;
+    color: #fff;
+    padding: 20px;
+    text-align: left;
+}
+
+section {
+    padding: 1.25vw;
+    text-align: left;
+}
+
+
+/* Hidden and visible classes */
+.hidden {
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+.visible {
+    opacity: 1;
+}
+
+/* Custom color paleta de verqor */
+.custom-color {
+    background-color: #fd8a32;
+    color: #ffffff;
+    font-family: "Fascinate Inline";
+}
+
+/* Cursor animation */
+.cursor {
+    display: inline;
+    color: white;
+    animation: blink-animation 1s infinite step-start;
+}
+
+@keyframes blink-animation {
+    50% {
+        opacity: 0;
+    }
+}
+
+/* Header image styles index */
+#headerImageContainer {
+    width: 100px;
+    height: auto;
+}
+
+#headerImage {
+    width: 100%;
+    height: auto;
+}
+
+/* solucion botones responsivos */
+@media screen and (max-width: 600px) {
+    .btn-large {
+        font-size: 16px; 
+        padding: 12px 20px; 
+    }
+    .btn-medium {
+        font-size: 14px; 
+        padding: 10px 16px; 
+    }
+}
+/*botones tamaño en landscape */
+.btn-large {
+    font-size: 24px;
+    padding: 16px 24px;
+}
+
+.btn-medium {
+    font-size: 20px;
+    padding: 12px 20px;
+}
+
+/* Fondo login */
+.fondoLogin {
+    width: 100%;
+    height: 100%;
+    --s: 200px; 
+    --c1: #1d1d1d;
+    --c2: #4e4f51;
+    --c3: #3c3c3c;
+  
+    background: repeating-conic-gradient(
+          from 30deg,
+          #0000 0 120deg,
+          var(--c3) 0 180deg
+        )
+        calc(0.5 * var(--s)) calc(0.5 * var(--s) * 0.577),
+      repeating-conic-gradient(
+        from 30deg,
+        var(--c1) 0 60deg,
+        var(--c2) 0 120deg,
+        var(--c3) 0 180deg
+      );
+    background-size: var(--s) calc(var(--s) * 0.577);
+  }
+  
+
+  /* Agrega estilos CSS específicos para hacer la página responsive */
+  @media only screen and (max-width: 600px) {
+    /* Estilos para dispositivos con un ancho máximo de 600px */
+    .w3-container.w3-bar.w3-margin-bottom.w3-margin-left {
+        flex-direction: column;
+        align-items: center;
+    }
+    .w3-container.w3-bar.w3-margin-bottom.w3-margin-left a {
+        margin-bottom: 10px;
+    }
+}

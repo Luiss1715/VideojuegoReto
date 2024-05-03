@@ -1,0 +1,10 @@
+/* CSS HEX */
+--crusta: #fd8a32;
+--tan-hide: #fd9a4e;
+--chardonnay: #fec091;
+--orange-roughy: #cc5e16;
+--whiskey: #cf996d;
+--catalina-blue: #042e6b;
+--bermuda-gray: #6a83a7;
+--white: #ffffff;
+--silver-rust: #c8beb8;

@@ -1,0 +1,15 @@
+function getUserIdFromCookie() {
+    const cookies = document.cookie.split(';');
+    for (let i = 0; i < cookies.length; i++) {
+      const cookie = cookies[i].trim();
+      // Verificar si la cookie comienza con "userId="
+      if (cookie.startsWith('userId=')) {
+        // Retornar el valor de la cookie después del signo igual
+        return cookie.substring('userId='.length);
+      }
+    }
+    // Si no se encuentra la cookie "userId", retornar null
+    return null;
+  }
+
+  
